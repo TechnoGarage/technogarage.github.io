@@ -5,24 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technogarage | Servizi Tech</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        amber: {
-                            500: '#f59e0b',
-                            600: '#d97706',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         body {
-            background-color: #050505;
-            color: #d1d5db; /* gray-300 */
+            background-color: #f8fafc; /* slate-50 */
+            color: #475569; /* slate-600 */
             font-family: 'Inter', system-ui, sans-serif;
             scroll-behavior: smooth;
         }
@@ -30,37 +16,37 @@
 </head>
 <body class="antialiased min-h-screen flex flex-col">
     <!-- Header -->
-    <header class="border-b border-gray-800 p-6 flex justify-between items-center bg-black/95 sticky top-0 z-50 backdrop-blur-sm">
+    <header class="border-b border-slate-200 p-6 flex justify-between items-center bg-white/95 sticky top-0 z-50 backdrop-blur-sm shadow-sm">
         <div class="flex items-center gap-5">
             <!-- Simulated Logo with specific path requested -->
-            <img src="assets/img/logo_2.png" alt="Technogarage Logo" class="h-20 w-20 p-1 object-contain rounded border-2 border-amber-500 bg-[#0a0a0a] shadow-[0_0_15px_rgba(245,158,11,0.3)] transition-transform hover:scale-105" onerror="this.src='https://via.placeholder.com/150/000000/f59e0b?text=TG'">
-            <h1 class="text-3xl font-black tracking-wider text-white">TECHNO<span class="text-amber-500">GARAGE</span></h1>
+            <img src="assets/img/logo_chiaro.png" alt="Technogarage Logo" class="h-24 w-24 p-1 object-contain rounded-lg border-2 border-sky-400 bg-white shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-transform hover:scale-105" onerror="this.src='https://via.placeholder.com/150/ffffff/38bdf8?text=TG'">
+            <h1 class="text-3xl font-black tracking-wider text-slate-800">TECHNO<span class="text-sky-500">GARAGE</span></h1>
         </div>
         <nav class="hidden md:flex gap-8">
-            <a href="#servizi" class="hover:text-amber-500 transition-colors uppercase text-sm tracking-widest font-bold">Servizi</a>
-            <a href="#contatti" class="hover:text-amber-500 transition-colors uppercase text-sm tracking-widest font-bold">Contatti</a>
+            <a href="#servizi" class="text-slate-600 hover:text-sky-500 transition-colors uppercase text-sm tracking-widest font-bold">Servizi</a>
+            <a href="#contatti" class="text-slate-600 hover:text-sky-500 transition-colors uppercase text-sm tracking-widest font-bold">Contatti</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="relative w-full h-[70vh] min-h-[500px] flex items-center">
         <!-- Background Image -->
-        <div class="absolute inset-0 z-0 bg-gray-900">
-            <img src="assets/img/copertina_2.jpg" alt="Copertina Technogarage" class="w-full h-full object-cover opacity-40" onerror="this.style.display='none'">
-            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/30"></div>
+        <div class="absolute inset-0 z-0 bg-slate-50">
+            <img src="assets/img/copertina_3.jpeg" alt="Copertina Technogarage" class="w-full h-full object-cover opacity-80" onerror="this.style.display='none'">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent"></div>
         </div>
         
         <div class="relative z-10 px-8 md:px-16 lg:px-24 max-w-5xl">
-            <h2 class="text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tight leading-tight">
+            <h2 class="text-5xl md:text-7xl font-black text-slate-800 mb-6 uppercase tracking-tight leading-tight">
                 La Tua Tecnologia,<br>
-                <span class="text-amber-500">Senza Stress.</span>
+                <span class="text-sky-500">Senza Stress.</span>
             </h2>
-            <div class="border-l-4 border-amber-500 pl-6 mb-10 mt-6">
-                <p class="text-xl md:text-2xl text-gray-300 font-medium italic">
+            <div class="border-l-4 border-sky-500 pl-6 mb-10 mt-6">
+                <p class="text-xl md:text-2xl text-slate-600 font-medium italic">
                     "Risparmiare tempo al cliente ed eliminare lo stress della tecnologia."
                 </p>
             </div>
-            <a href="#servizi" class="inline-block bg-amber-500 text-black font-bold py-4 px-10 rounded-sm hover:bg-amber-600 transition-all uppercase tracking-widest hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(245,158,11,0.3)] hover:shadow-[0_0_25px_rgba(245,158,11,0.5)]">
+            <a href="#servizi" class="inline-block bg-sky-500 text-white font-bold py-4 px-10 rounded-sm hover:bg-sky-600 transition-all uppercase tracking-widest hover:scale-105 active:scale-95 shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40">
                 Scopri Tutti I Servizi
             </a>
         </div>
@@ -68,90 +54,113 @@
 
     <!-- Philosophy Section -->
     <section class="py-20 px-8 md:px-16 max-w-6xl mx-auto animate-fade-in-up mt-8">
-        <div class="bg-[#0a0a0a] border border-gray-800 p-10 md:p-14 rounded-sm shadow-2xl relative overflow-hidden flex flex-col md:flex-row gap-10 items-center justify-between">
+        <div class="bg-white border border-slate-200 p-10 md:p-14 rounded-sm shadow-xl relative overflow-hidden flex flex-col md:flex-row gap-10 items-center justify-between">
             <!-- Decorative accent -->
-            <div class="absolute top-0 left-0 w-2 h-full bg-amber-500"></div>
+            <div class="absolute top-0 left-0 w-2 h-full bg-sky-500"></div>
             
-            <div class="md:w-3/5 space-y-6 text-gray-300 text-lg md:text-xl leading-relaxed">
-                <h3 class="text-4xl font-black text-white mb-8 tracking-wide uppercase">Il Vero Costo <span class="text-amber-500">del "Fai-da-te"</span></h3>
-                <p>Oggi il web è pieno di tutorial che dicono: <span class="text-white font-bold italic">"È facile, bastano 5 minuti"</span>.</p>
+            <div class="md:w-3/5 space-y-6 text-slate-600 text-lg md:text-xl leading-relaxed">
+                <h3 class="text-4xl font-black text-slate-800 mb-8 tracking-wide uppercase">Il Vero Costo <span class="text-sky-500">del "Fai-da-te"</span></h3>
+                <p>Oggi il web è pieno di tutorial che dicono: <span class="text-slate-800 font-bold italic">"È facile, bastano 5 minuti"</span>.</p>
                 <p>La verità? Assemblare un PC è facile... finché non pieghi un pin del processore da 400€. Creare un sito web è facile... finché non sparisce da Google dopo un aggiornamento o smette di funzionare proprio quando un cliente prova a scriverti.</p>
                 <p>Non sono qui per dirti che la tecnologia è un segreto per pochi eletti. Sì, potresti imparare a fare tutto da solo. Ma la domanda è: ti conviene davvero passare 20 ore a lottare con un errore tecnico per risparmiare il costo di una consulenza professionale?</p>
             </div>
 
-            <div class="md:w-2/5 p-8 border-t md:border-t-0 md:border-l border-gray-800 flex items-center h-full">
-                <p class="text-2xl md:text-3xl font-bold text-white leading-snug">
+            <div class="md:w-2/5 p-8 border-t md:border-t-0 md:border-l border-slate-200 flex items-center h-full">
+                <p class="text-2xl md:text-3xl font-bold text-slate-800 leading-snug">
                     Il mio lavoro è farti saltare la fase dei mal di testa, dei weekend persi su YouTube e dei soldi buttati in componenti bruciati. 
                     <br><br>
-                    <span class="text-amber-500 uppercase tracking-widest text-xl border-b-2 border-amber-500 pb-1">Io ci metto la tecnica, <br>tu ti riprendi il tempo.</span>
+                    <span class="text-sky-500 uppercase tracking-widest text-xl border-b-2 border-sky-500 pb-1">Io ci metto la tecnica, <br>tu ti riprendi il tempo.</span>
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="servizi" class="relative py-24 px-8 md:px-16 w-full mt-10 shadow-2xl overflow-hidden mt-8">
+    <section id="servizi" class="relative py-24 px-8 md:px-16 w-full mt-10 shadow-sm border-t border-slate-200 overflow-hidden mt-8">
         <!-- Background Image -->
-        <div class="absolute inset-0 z-0 bg-black w-full h-full">
-            <img src="assets/img/copertina_2.jpg" alt="Sfondo Servizi" class="w-full h-full object-cover opacity-30">
-            <div class="absolute inset-0 bg-gradient-to-b from-[#050505] via-black/50 to-[#050505]"></div>
+        <div class="absolute inset-0 z-0 bg-slate-50 w-full h-full">
+            <img src="assets/img/copertina_3.jpeg" alt="Sfondo Servizi" class="w-full h-full object-cover opacity-10">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-50 via-slate-50/80 to-slate-50"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto flex-grow">
             <div class="text-center mb-20 animate-fade-in-up">
-            <h3 class="text-4xl font-black text-white mb-4 uppercase tracking-widest">I Nostri <span class="text-amber-500">Servizi</span></h3>
-            <div class="w-24 h-1.5 bg-amber-500 mx-auto"></div>
+            <h3 class="text-4xl font-black text-slate-800 mb-4 uppercase tracking-widest">I Nostri <span class="text-sky-500">Servizi</span></h3>
+            <div class="w-24 h-1.5 bg-sky-500 mx-auto"></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <!-- Riparazione PC -->
-            <div class="bg-[#0a0a0a] border border-gray-800 p-10 hover:border-amber-500/50 hover:bg-gray-900 transition-all duration-300 group rounded-sm shadow-xl flex flex-col justify-center">
-                <div class="text-amber-500 mb-6 opacity-80 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(245,158,11,0.5)] transition-all transform origin-left">
+            <div class="bg-white border border-slate-200 p-10 hover:border-sky-500/50 hover:bg-slate-50 transition-all duration-300 group rounded-lg shadow-md hover:shadow-xl flex flex-col justify-center">
+                <div class="text-sky-500 mb-6 opacity-80 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-md transition-all transform origin-left">
                     <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 </div>
-                <h4 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">Soluzioni PC a 360°</h4>
-                <div class="text-gray-400 leading-relaxed text-sm md:text-base space-y-4">
-                    <p><strong class="text-gray-200">Assemblaggio Custom:</strong> Progettiamo e montiamo il computer perfetto per te.</p>
-                    <p><strong class="text-gray-200">Riparazioni Rapide:</strong> Interventi risolutivi su hardware e software.</p>
-                    <p><strong class="text-gray-200">Upgrade Sistemi:</strong> Trasformiamo il tuo vecchio PC in una macchina scattante.</p>
+                <h4 class="text-2xl font-bold text-slate-800 mb-4 uppercase tracking-wide">Soluzioni PC a 360°</h4>
+                <div class="text-slate-600 leading-relaxed text-sm md:text-base space-y-4">
+                    <p><strong class="text-slate-800 font-semibold">Assemblaggio Custom:</strong> Progettiamo e montiamo il computer perfetto per te.</p>
+                    <p><strong class="text-slate-800 font-semibold">Riparazioni Rapide:</strong> Interventi risolutivi su hardware e software.</p>
+                    <p><strong class="text-slate-800 font-semibold">Upgrade Sistemi:</strong> Trasformiamo il tuo vecchio PC in una macchina scattante.</p>
                 </div>
             </div>
 
             <!-- Hardware & Build Premium -->
-            <div class="bg-[#0a0a0a] border border-gray-800 p-10 hover:border-amber-500/50 hover:bg-gray-900 transition-all duration-300 group rounded-sm shadow-xl flex flex-col justify-center">
-                <div class="text-amber-500 mb-6 opacity-80 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(245,158,11,0.5)] transition-all transform origin-left">
+            <div class="bg-white border border-slate-200 p-10 hover:border-sky-500/50 hover:bg-slate-50 transition-all duration-300 group rounded-lg shadow-md hover:shadow-xl flex flex-col justify-center">
+                <div class="text-sky-500 mb-6 opacity-80 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-md transition-all transform origin-left">
                     <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
                 </div>
-                <h4 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">Hardware & Build Premium</h4>
-                <div class="text-gray-400 leading-relaxed text-sm md:text-base space-y-4">
-                    <p><strong class="text-gray-200">Ricerca e Selezione:</strong> Selezioniamo e testiamo personalmente ogni componente per darti il massimo.</p>
-                    <p><strong class="text-gray-200">Usato Garantito:</strong> Build rigenerate, sostenibili e con prestazioni imbattibili al miglior prezzo.</p>
-                    <p><strong class="text-gray-200">Trattative Dedicate:</strong> Ci occupiamo noi di trovare l'occasione giusta per il tuo budget.</p>
+                <h4 class="text-2xl font-bold text-slate-800 mb-4 uppercase tracking-wide">Hardware & Build Premium</h4>
+                <div class="text-slate-600 leading-relaxed text-sm md:text-base space-y-4">
+                    <p><strong class="text-slate-800 font-semibold">Ricerca e Selezione:</strong> Selezioniamo e testiamo personalmente ogni componente per darti il massimo.</p>
+                    <p><strong class="text-slate-800 font-semibold">Usato Garantito:</strong> Build rigenerate, sostenibili e con prestazioni imbattibili al miglior prezzo.</p>
+                    <p><strong class="text-slate-800 font-semibold">Trattative Dedicate:</strong> Ci occupiamo noi di trovare l'occasione giusta per il tuo budget.</p>
                 </div>
             </div>
 
             <!-- Sviluppo Web Agile -->
-            <div class="bg-[#0a0a0a] border border-gray-800 p-10 hover:border-amber-500/50 hover:bg-gray-900 transition-all duration-300 group rounded-sm shadow-xl flex flex-col justify-center">
-                <div class="text-amber-500 mb-6 opacity-80 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(245,158,11,0.5)] transition-all transform origin-left">
+            <div class="bg-white border border-slate-200 p-10 hover:border-sky-500/50 hover:bg-slate-50 transition-all duration-300 group rounded-lg shadow-md hover:shadow-xl flex flex-col justify-center">
+                <div class="text-sky-500 mb-6 opacity-80 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-md transition-all transform origin-left">
                     <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                 </div>
-                <h4 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">Sviluppo Web Agile</h4>
-                <div class="text-gray-400 leading-relaxed text-sm md:text-base space-y-4">
-                    <p><strong class="text-gray-200">Web App dedicate:</strong> Soluzioni leggere per automatizzare operazioni ripetitive e noiose.</p>
-                    <p><strong class="text-gray-200">Strumenti su Misura:</strong> Software semplici e veloci, progettati per risolvere problemi specifici.</p>
-                    <p><strong class="text-gray-200">User Experience:</strong> Strumenti facili da usare, senza inutili complicazioni tecniche.</p>
+                <h4 class="text-2xl font-bold text-slate-800 mb-4 uppercase tracking-wide">Sviluppo Web Agile</h4>
+                <div class="text-slate-600 leading-relaxed text-sm md:text-base space-y-4">
+                    <p><strong class="text-slate-800 font-semibold">Web App dedicate:</strong> Soluzioni leggere per automatizzare operazioni ripetitive e noiose.</p>
+                    <p><strong class="text-slate-800 font-semibold">Strumenti su Misura:</strong> Software semplici e veloci, progettati per risolvere problemi specifici.</p>
+                    <p><strong class="text-slate-800 font-semibold">User Experience:</strong> Strumenti facili da usare, senza inutili complicazioni tecniche.</p>
+                </div>
+                
+                <div class="mt-8 pt-6 border-t border-slate-100">
+                    <p class="text-sm text-slate-500 mb-3 font-medium uppercase tracking-wider">La Nostra App Gratuita</p>
+                    <a href="#" class="inline-flex items-center gap-2 bg-slate-800 text-white px-5 py-2.5 rounded hover:bg-sky-500 transition-colors text-sm font-bold tracking-wide shadow-sm group-hover:shadow">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Scarica l'App
+                    </a>
                 </div>
             </div>
 
             <!-- Spazi Digitali -->
-            <div class="bg-[#0a0a0a] border border-gray-800 p-10 hover:border-amber-500/50 hover:bg-gray-900 transition-all duration-300 group rounded-sm shadow-xl flex flex-col justify-center">
-                <div class="text-amber-500 mb-6 opacity-80 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(245,158,11,0.5)] transition-all transform origin-left">
+            <div class="bg-white border border-slate-200 p-10 hover:border-sky-500/50 hover:bg-slate-50 transition-all duration-300 group rounded-lg shadow-md hover:shadow-xl flex flex-col justify-center">
+                <div class="text-sky-500 mb-6 opacity-80 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-md transition-all transform origin-left">
                     <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
                 </div>
-                <h4 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">Spazi Digitali Essenziali & Su Misura</h4>
-                <div class="text-gray-400 leading-relaxed space-y-4">
-                    <p><strong class="text-gray-200">Per il Lavoro:</strong> Realizziamo siti vetrina e biglietti da visita digitali leggeri, pensati per liberi professionisti che cercano un’identità online chiara e immediata.</p>
-                    <p><strong class="text-gray-200">Per i Tuoi Eventi:</strong> Uno scrigno digitale per racchiudere i momenti più belli di feste e celebrazioni, da condividere con chi ami.</p>
-                    <p><strong class="text-gray-200">Per il Ricordo:</strong> Oasi di memoria delicate e rispettose per onorare i tuoi fedeli compagni a quattro zampe o quei frammenti di vita e istanti preziosi che desideri custodire per sempre.</p>
+                <h4 class="text-2xl font-bold text-slate-800 mb-4 uppercase tracking-wide">Spazi Digitali Essenziali & Su Misura</h4>
+                <div class="text-slate-600 leading-relaxed space-y-4">
+                    <p><strong class="text-slate-800 font-semibold">Per il Lavoro:</strong> Realizziamo siti vetrina e biglietti da visita digitali leggeri, pensati per liberi professionisti che cercano un’identità online chiara e immediata.</p>
+                    <p><strong class="text-slate-800 font-semibold">Per i Tuoi Eventi:</strong> Uno scrigno digitale per racchiudere i momenti più belli di feste e celebrazioni, da condividere con chi ami.</p>
+                    <p><strong class="text-slate-800 font-semibold">Per il Ricordo:</strong> Oasi di memoria delicate e rispettose per onorare i tuoi fedeli compagni a quattro zampe o quei frammenti di vita e istanti preziosi che desideri custodire per sempre.</p>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-100">
+                    <p class="text-sm text-slate-500 mb-3 font-medium uppercase tracking-wider">Esplora i Siti Campione</p>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="#" class="text-xs font-bold text-slate-700 bg-slate-100 hover:bg-sky-100 hover:text-sky-700 border border-slate-200 hover:border-sky-300 px-3 py-1.5 rounded transition-colors flex items-center gap-1.5 shadow-sm">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg> Sito Lavoro
+                        </a>
+                        <a href="#" class="text-xs font-bold text-slate-700 bg-slate-100 hover:bg-sky-100 hover:text-sky-700 border border-slate-200 hover:border-sky-300 px-3 py-1.5 rounded transition-colors flex items-center gap-1.5 shadow-sm">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg> Sito Evento
+                        </a>
+                        <a href="#" class="text-xs font-bold text-slate-700 bg-slate-100 hover:bg-sky-100 hover:text-sky-700 border border-slate-200 hover:border-sky-300 px-3 py-1.5 rounded transition-colors flex items-center gap-1.5 shadow-sm">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg> Oasi di Memoria
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,22 +168,22 @@
     </section>
 
     <!-- Call to action pre-footer -->
-    <section class="border-t border-gray-800 bg-black py-16 px-8 text-center" id="contatti">
-        <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Pronto a Lasciarti alle Spalle i Problemi Tecnici?</h3>
-        <p class="text-amber-500 font-bold mb-8 uppercase tracking-widest text-lg">Contattaci Subito</p>
+    <section class="border-t border-slate-200 bg-white py-16 px-8 text-center" id="contatti">
+        <h3 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Pronto a Lasciarti alle Spalle i Problemi Tecnici?</h3>
+        <p class="text-sky-500 font-bold mb-8 uppercase tracking-widest text-lg">Contattaci Subito</p>
         <div class="flex justify-center gap-10">
             <!-- Email -->
-            <a href="mailto:ma83am@gmail.com" class="text-gray-400 hover:text-amber-500 transition-colors hover:scale-125 transform" title="Inviaci un'email">
+            <a href="mailto:ma83am@gmail.com" class="text-slate-400 hover:text-sky-500 transition-colors hover:scale-125 transform" title="Inviaci un'email">
                 <span class="sr-only">Email</span>
                 <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
             </a>
             <!-- WhatsApp -->
-            <a href="https://wa.me/393208217985" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-emerald-500 transition-colors hover:scale-125 transform" title="Contattaci su WhatsApp">
+            <a href="https://wa.me/393208217985" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-emerald-500 transition-colors hover:scale-125 transform" title="Contattaci su WhatsApp">
                 <span class="sr-only">WhatsApp</span>
                 <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.385 0 0 5.386 0 12.031c0 2.227.581 4.397 1.685 6.305L.175 23.832l5.65-1.482c1.838 1.011 3.914 1.543 6.046 1.543 6.646 0 12.031-5.386 12.031-12.031S18.677 0 12.031 0zm3.899 17.15c-.198.558-1.15.99-1.58.99-.431 0-.962.136-2.905-.668-2.333-.96-3.84-3.344-3.957-3.499-.117-.156-.948-1.264-.948-2.408 0-1.144.593-1.706.797-1.928.204-.222.443-.277.59-.277.147 0 .295 0 .422.006.136.006.315-.05.485.358.175.42.595 1.455.648 1.564.053.111.088.24.017.382-.07.141-.105.23-.211.353-.105.122-.224.257-.318.337-.101.085-.205.178-.09.378.115.2.511.848 1.096 1.371.758.677 1.397.886 1.6.993.203.107.322.09.444-.047.122-.138.528-.614.669-.824.141-.211.282-.176.467-.107.185.069 1.168.551 1.368.65.2.1.332.15.38.232.046.082.046.474-.152 1.033z"/></svg>
             </a>
             <!-- Facebook -->
-            <a href="https://www.facebook.com/share/1CP5LcLYTU/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors hover:scale-125 transform" title="Visita la nostra pagina Facebook">
+            <a href="https://www.facebook.com/share/1CP5LcLYTU/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors hover:scale-125 transform" title="Visita la nostra pagina Facebook">
                 <span class="sr-only">Facebook</span>
                 <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
@@ -182,26 +191,26 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#050505] border-t border-gray-900 py-12 text-center">
+    <footer class="bg-slate-900 border-t border-slate-800 py-12 text-center">
         <div class="max-w-4xl mx-auto px-8">
-            <h4 class="text-3xl font-black text-white mb-4 uppercase tracking-widest">TECHNO<span class="text-amber-500">GARAGE</span></h4>
-            <p class="text-gray-400 mb-6 font-medium italic">"Il tuo tecnico di fiducia contro il caos digitale."</p>
+            <h4 class="text-3xl font-black text-white mb-4 uppercase tracking-widest">TECHNO<span class="text-sky-500">GARAGE</span></h4>
+            <p class="text-slate-400 mb-6 font-medium italic">"Il tuo tecnico di fiducia contro il caos digitale."</p>
             
-            <div class="text-gray-500 text-sm mb-10 space-y-1 font-medium">
+            <div class="text-slate-500 text-sm mb-10 space-y-1 font-medium">
                 <p>Sede: Via 1 Maggio 34, 66020 San Giovanni Teatino (CH)</p>
                 <p>P.IVA: 02758480699</p>
             </div>
             
-            <div class="flex flex-col items-center justify-center text-center text-gray-500 text-sm font-semibold tracking-wide border-t border-gray-900 pt-8 gap-5">
-                <span class="text-gray-300 font-bold tracking-widest text-base flex items-center justify-center gap-2 uppercase w-full">
+            <div class="flex flex-col items-center justify-center text-center text-slate-500 text-sm font-semibold tracking-wide border-t border-slate-800 pt-8 gap-5">
+                <span class="text-slate-300 font-bold tracking-widest text-base flex items-center justify-center gap-2 uppercase w-full">
                     Creato con 
-                    <svg class="w-5 h-5 text-amber-500 hover:scale-125 transition-transform" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg> 
+                    <svg class="w-5 h-5 text-sky-500 hover:scale-125 transition-transform" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg> 
                     da Technogarage
                 </span>
                 <div class="flex flex-col md:flex-row items-center gap-4 w-full justify-center mt-2">
                     <span>&copy; 2026 Technogarage. Tutti i diritti riservati.</span>
-                    <span class="hidden md:inline-block text-gray-700">|</span>
-                    <a href="privacy.html" class="hover:text-amber-500 transition-colors uppercase tracking-wider text-xs border border-gray-800 px-3 py-1 rounded">Privacy Policy</a>
+                    <span class="hidden md:inline-block text-slate-700">|</span>
+                    <a href="privacy.html" class="hover:text-sky-500 transition-colors uppercase tracking-wider text-xs border border-slate-700 px-3 py-1 rounded text-slate-400">Privacy Policy</a>
                 </div>
             </div>
         </div>
